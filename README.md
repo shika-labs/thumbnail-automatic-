@@ -138,3 +138,27 @@ python generate_thumbnail.py config/sample_thumbnail.json --output output/video-
 ```
 
 The output directory is ignored by git so you can commit only the reusable template files.
+
+## Có cần cập nhật lên GitHub không?
+
+Nếu bạn đã chỉnh sửa nội dung (ví dụ đổi chữ trong JSON, thêm ảnh mẫu, cập nhật README) và muốn lưu lại trên GitHub thì hãy đẩy commit mới lên. Nếu chưa thay đổi gì kể từ lần đẩy trước thì không cần làm thêm bước nào.
+
+### Các bước chi tiết cho người mới
+
+1. **Kiểm tra xem có thay đổi không:**
+   ```bash
+   git status
+   ```
+   - Nếu thấy dòng `nothing to commit, working tree clean` nghĩa là không có gì mới để đẩy.
+   - Nếu có danh sách file màu đỏ/xanh lá nghĩa là bạn đã chỉnh sửa và cần commit trước khi đẩy.
+2. **Tạo commit (khi có thay đổi):**
+   ```bash
+   git add .
+   git commit -m "Mô tả ngắn về thay đổi"
+   ```
+3. **Đẩy lên GitHub:**
+   ```bash
+   git push
+   ```
+
+> Lưu ý: bạn chỉ chạy được `git push` khi đã cấu hình remote `origin` trỏ tới repository GitHub của mình và đã đăng nhập bằng PAT hoặc SSH key. Nếu chưa thiết lập, hãy tạo repo mới trên GitHub, rồi chạy `git remote add origin https://github.com/<tai-khoan>/<ten-repo>.git` và cấu hình PAT/SSH như hướng dẫn của GitHub.
