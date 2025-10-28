@@ -1,0 +1,10 @@
+__pycache__/
+
+assets/*
+!assets/.gitkeep
+
+fonts/*
+!fonts/.gitkeep
+
+output/*
+!output/.gitkeep

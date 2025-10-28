@@ -1,0 +1,69 @@
+{
+  "output_path": "output/sample_thumbnail.png",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "background_color": "#101010"
+  },
+  "photo": {
+    "path": "assets/subject.jpg",
+    "anchor": "right",
+    "padding": 48,
+    "width": 520,
+    "corner_radius": 24
+  },
+  "text_column": {
+    "x": 120,
+    "y": 80,
+    "gap": 32,
+    "right_padding": 60,
+    "photo_gap": 40,
+    "accent": {
+      "enabled": true,
+      "width": 28,
+      "offset": 36,
+      "fill": "#d40000",
+      "bottom_padding": 60
+    }
+  },
+  "blocks": [
+    {
+      "id": "hook",
+      "text": "絶対するな",
+      "font_path": "fonts/NotoSansJP-Bold.otf",
+      "font_size": 108,
+      "fill": "#ffffff",
+      "stroke_width": 4,
+      "stroke_fill": "#111111",
+      "background_fill": "#d40000",
+      "background_padding": [24, 32, 24, 32],
+      "background_radius": 28,
+      "max_width": 520
+    },
+    {
+      "id": "headline",
+      "text": "50代から人生が\n崩壊する習慣",
+      "font_path": "fonts/NotoSansJP-Black.otf",
+      "font_size": 92,
+      "fill": "#ffd60a",
+      "stroke_width": 6,
+      "stroke_fill": "#000000",
+      "line_spacing": 8,
+      "max_width": 520
+    },
+    {
+      "id": "guest",
+      "text": "松下 幸之助",
+      "font_path": "fonts/NotoSansJP-Bold.otf",
+      "font_size": 64,
+      "fill": "#ffffff",
+      "stroke_width": 3,
+      "stroke_fill": "#000000",
+      "background_fill": "#202020",
+      "background_padding": [18, 24, 18, 24],
+      "background_radius": 24,
+      "max_width": 420,
+      "align": "center"
+    }
+  ]
+}
